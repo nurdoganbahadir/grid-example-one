@@ -94,7 +94,7 @@ html {
   background-color: var(--secondary-color);
   grid-row: 3 / 4;
   grid-column: 4 /5;
-/*   border-color: transparent transparent var(--secondary-color) transparent;
+  /*   border-color: transparent transparent var(--secondary-color) transparent;
   border-style: solid;
   border-width: 0px 15px 15px 15px;
   width: 0px;
@@ -265,13 +265,14 @@ html {
   background-color: var(--container-color);
   grid-row: 11/ 12;
   grid-column: 5 /6;
+  position: relative;
 }
 .box37 {
   background-color: var(--third-color);
   grid-row: 3/ 5;
   grid-column: 1 /2;
 }
-
+/* BOX SONRASI İNCE AYARLAR */
 .smallHeader {
   font-size: 10px;
   font-weight: 100;
@@ -300,4 +301,23 @@ h3 {
   flex-direction: column;
   gap: 10px;
   padding: var(--navbar-padding);
+}
+.linkA {
+  font-size: 12px;
+  float: right;
+}
+.iconFooter {
+  font-size: 2rem;
+  clear: both;
+  float: right;
+}
+.fa-solid {
+  clear: both;
+  float: right;
+}
+.footerLine{
+  color: gray;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
