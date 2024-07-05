@@ -47,6 +47,10 @@ html {
   grid-column-start: 4;
   background-color: var(--third-color);
 }
+.box1:hover, .box2:hover, .box3:hover{
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
 .box4 {
   grid-column-start: 5;
   display: flex;
