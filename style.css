@@ -1,29 +1,42 @@
+:root {
+  --primary-color: #f5ff00;
+  --secondary-color: #f2f2f2;
+  --third-color: #ffffff;
+  --container-color: #e3e3e3;
+  --navbar-padding: 1rem;
+}
+
 body,
 html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(182, 179, 179);
+  background-color: var(--container-color);
 }
 .container {
   display: grid;
   grid-template-columns: repeat(5, 200px);
   grid-template-rows: 50px repeat(10, 200px);
   justify-content: center;
-  margin: 0rem 2rem;
+  position: relative;
 }
-.box {
-  background-color: white;
-  border: 1px solid red;
+.box{
+  align-content: center;
 }
 .box1 {
+  padding: var(--navbar-padding);
   grid-column-start: 2;
+  background-color: var(--third-color);
 }
 .box2 {
+  padding: var(--navbar-padding);
   grid-column-start: 3;
+  background-color: var(--third-color);
 }
 .box3 {
+  padding: var(--navbar-padding);
   grid-column-start: 4;
+  background-color: var(--third-color);
 }
 .box4 {
   grid-column-start: 5;
@@ -63,17 +76,27 @@ html {
   grid-column: 5 /6;
 }
 .box8 {
-  background-color: yellow;
+  background-color: var(--primary-color);
   grid-row: 3 / 4;
   grid-column: 3 /4;
 }
 .box9 {
-  background-color: gray;
+  background-color: var(--secondary-color);
   grid-row: 3 / 4;
   grid-column: 4 /5;
+  border-color: transparent transparent rgb(159, 159, 161) transparent;
+  border-style: solid;
+  border-width: 0px 15px 15px 15px;
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: -7px;
+  left: 50%;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
 }
 .box10 {
-  background-color: white;
+  background-color: var(--third-color);
   grid-row: 3 / 4;
   grid-column: 5 /6;
 }
@@ -99,17 +122,17 @@ html {
   grid-column: 4 /6;
 }
 .box14 {
-  background-color: yellow;
+  background-color: var(--primary-color);
   grid-row: 5/ 6;
   grid-column: 2 /3;
 }
 .box15 {
-  background-color: gray;
+  background-color: var(--secondary-color);
   grid-row: 5 / 6;
   grid-column: 3 /4;
 }
 .box16 {
-  background-color: white;
+  background-color: var(--third-color);
   grid-row: 5 / 6;
   grid-column: 4 /5;
 }
@@ -135,17 +158,17 @@ html {
   grid-column: 5 /6;
 }
 .box20 {
-  background-color: gray;
+  background-color: var(--secondary-color);
   grid-row: 7 / 8;
   grid-column: 3 /4;
 }
 .box21 {
-  background-color: yellow;
+  background-color: var(--primary-color);
   grid-row: 7/ 8;
   grid-column: 4 /5;
 }
 .box22 {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--third-color);
   grid-row: 7/ 8;
   grid-column: 5 /6;
 }
@@ -171,69 +194,70 @@ html {
   grid-column: 4 / 6;
 }
 .box26 {
-  background-color: yellow;
+  background-color: var(--primary-color);
   grid-row: 9/ 10;
   grid-column: 2 /3;
 }
 .box27 {
-  background-color: gray;
+  background-color: var(--secondary-color);
   grid-row: 9 / 10;
   grid-column: 3 /4;
 }
-.box27 {
-  background-color: rgb(255, 255, 255);
+.box28 {
+  background-color: var(--third-color);
   grid-row: 9 / 10;
   grid-column: 5 /6;
 }
-.box28 {
+.box29 {
   background-image: url(./images/box13.jpg);
   background-position: center;
   background-size: cover;
   grid-row: 10 / 11;
   grid-column: 2 /3;
 }
-.box28 {
+.box30 {
   background-image: url(./images/box14.jpg);
   background-position: center;
   background-size: cover;
   grid-row: 10 / 11;
   grid-column: 2 /3;
 }
-.box29 {
+.box31 {
   background-image: url(./images/box15.jpg);
   background-position: center;
   background-size: cover;
   grid-row: 10 / 11;
   grid-column: 3 /4;
 }
-.box30 {
+.box32 {
   background-image: url(./images/box8.jpg);
   background-position: center;
   background-size: cover;
   grid-row: 10 / 11;
   grid-column: 4 /5;
 }
-.box31 {
-  background-color: rgb(211, 211, 211);
+.box33 {
+  background-color: var(--secondary-color);
   grid-row: 11/ 12;
   grid-column: 2 /3;
 }
-.box32 {
-  background-color: rgb(255, 255, 255);
+.box34 {
+  background-color: var(--third-color);
   grid-row: 11/ 12;
   grid-column: 3 /4;
 }
-.box33 {
-  background-color: rgb(210, 241, 68);
+.box35 {
+  background-color: var(--primary-color);
   grid-row: 11/ 12;
   grid-column: 4 /5;
 }
-.box34 {
-  background-color: rgb(171, 172, 170);
+.box36 {
+  background-color: var(--container-color);
   grid-row: 11/ 12;
   grid-column: 5 /6;
 }
-.box35{
+.box37 {
+  background-color: var(--third-color);
   grid-row: 3/ 5;
   grid-column: 1 /2;
 }
