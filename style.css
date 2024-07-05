@@ -22,15 +22,15 @@ html {
 }
 .container {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(5, 200px);
   grid-template-rows: 50px repeat(10, 200px);
-  justify-content: center;
-  position: relative;
 }
 .box {
   align-content: center;
   padding: 0;
   margin: 0;
+  position: relative;
 }
 .box1 {
   padding: var(--navbar-padding);
@@ -47,7 +47,9 @@ html {
   grid-column-start: 4;
   background-color: var(--third-color);
 }
-.box1:hover, .box2:hover, .box3:hover{
+.box1:hover,
+.box2:hover,
+.box3:hover {
   background-color: var(--primary-color);
   cursor: pointer;
 }
@@ -94,25 +96,45 @@ html {
   grid-row: 3 / 4;
   grid-column: 3 /4;
 }
+.box8::after {
+  content: " ";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 0px 10px 15px 10px;
+  border-color: transparent transparent var(--primary-color) transparent;
+}
 .box9 {
   background-color: var(--secondary-color);
   grid-row: 3 / 4;
   grid-column: 4 /5;
-  /*   border-color: transparent transparent var(--secondary-color) transparent;
-  border-style: solid;
-  border-width: 0px 15px 15px 15px;
-  width: 0px;
-  height: 0px;
+}
+.box9::after {
+  content: " ";
   position: absolute;
-  top: -7px;
+  top: -14px;
   left: 50%;
-  background-color: transparent;
-  transform: translate(-50%, -50%); */
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 0px 10px 15px 10px;
+  border-color: transparent transparent var(--secondary-color) transparent;
 }
 .box10 {
   background-color: var(--third-color);
   grid-row: 3 / 4;
   grid-column: 5 /6;
+}
+.box10::after {
+  content: " ";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 0px 10px 15px 10px;
+  border-color: transparent transparent var(--third-color) transparent;
 }
 .box11 {
   background-image: url(./images/box4.jpg);
@@ -140,15 +162,45 @@ html {
   grid-row: 5/ 6;
   grid-column: 2 /3;
 }
+.box14::after {
+  content: " ";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 0px 10px 15px 10px;
+  border-color: transparent transparent var(--primary-color) transparent;
+}
 .box15 {
   background-color: var(--secondary-color);
   grid-row: 5 / 6;
   grid-column: 3 /4;
 }
+.box15::after {
+  content: " ";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 0px 10px 15px 10px;
+  border-color: transparent transparent var(--secondary-color) transparent;
+}
 .box16 {
   background-color: var(--third-color);
   grid-row: 5 / 6;
   grid-column: 4 /5;
+}
+.box16::after {
+  content: " ";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 0px 10px 15px 10px;
+  border-color: transparent transparent var(--third-color) transparent;
 }
 .box17 {
   background-image: url(./images/box7.jpg);
@@ -176,15 +228,45 @@ html {
   grid-row: 7 / 8;
   grid-column: 3 /4;
 }
+.box20::after {
+  content: " ";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 0px 10px 15px 10px;
+  border-color: transparent transparent var(--secondary-color) transparent;
+}
 .box21 {
   background-color: var(--primary-color);
   grid-row: 7/ 8;
   grid-column: 4 /5;
 }
+.box21::after {
+  content: " ";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 0px 10px 15px 10px;
+  border-color: transparent transparent var(--primary-color) transparent;
+}
 .box22 {
   background-color: var(--third-color);
   grid-row: 7/ 8;
   grid-column: 5 /6;
+}
+.box22::after {
+  content: " ";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 0px 10px 15px 10px;
+  border-color: transparent transparent var(--third-color) transparent;
 }
 .box23 {
   background-image: url(./images/box10.jpg);
@@ -212,15 +294,45 @@ html {
   grid-row: 9/ 10;
   grid-column: 2 /3;
 }
+.box26::after {
+  content: " ";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 0px 10px 15px 10px;
+  border-color: transparent transparent var(--primary-color) transparent;
+}
 .box27 {
   background-color: var(--secondary-color);
   grid-row: 9 / 10;
   grid-column: 3 /4;
 }
+.box27::after {
+  content: " ";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 0px 10px 15px 10px;
+  border-color: transparent transparent var(--secondary-color) transparent;
+}
 .box28 {
   background-color: var(--third-color);
   grid-row: 9 / 10;
   grid-column: 5 /6;
+}
+.box28::after {
+  content: " ";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 0px 10px 15px 10px;
+  border-color: transparent transparent var(--third-color) transparent;
 }
 .box29 {
   background-image: url(./images/box13.jpg);
@@ -255,15 +367,45 @@ html {
   grid-row: 11/ 12;
   grid-column: 2 /3;
 }
+.box33::after {
+  content: " ";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 0px 10px 15px 10px;
+  border-color: transparent transparent var(--secondary-color) transparent;
+}
 .box34 {
   background-color: var(--third-color);
   grid-row: 11/ 12;
   grid-column: 3 /4;
 }
+.box34::after {
+  content: " ";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 0px 10px 15px 10px;
+  border-color: transparent transparent var(--third-color) transparent;
+}
 .box35 {
   background-color: var(--primary-color);
   grid-row: 11/ 12;
   grid-column: 4 /5;
+}
+.box35::after {
+  content: " ";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translate(-50%);
+  border-style: solid;
+  border-width: 0px 10px 15px 10px;
+  border-color: transparent transparent var(--primary-color) transparent;
 }
 .box36 {
   background-color: var(--container-color);
